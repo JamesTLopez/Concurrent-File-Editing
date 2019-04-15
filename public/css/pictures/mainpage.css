@@ -1,0 +1,85 @@
+body,html{
+background-image: url("./pictures/mainpage.png");
+color: White;
+height: 100%;
+width: 100%;
+
+}
+
+.container-fluid{
+  text-align: center;
+
+}
+
+.menus{
+  text-align:left;
+  border-style: solid;
+  border-color: #333333;
+  border-left :10px;
+    background-color: #262626
+}
+
+.options{
+  margin-top:10px;
+}
+.imgs{
+  border-style: dashed;
+  border-color: purple;
+  padding-top: 1em;
+  padding-bottom:  1em;
+
+  margin-top: 30px;
+
+}
+
+
+.cols{
+  text-align: left;
+  font-size: 1.5em;
+  margin-top:20px;
+
+}
+
+.userOptions{
+  border-style: solid;
+  border-color:  #1a1a1a;
+
+  border-left: 10px;
+
+  border-right: 10px;
+
+
+}
+
+
+
+.col-md-2{
+
+}
+
+.col-md-10{
+  border-style: dashed;
+  border-color: white;
+
+}
+
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+.homeBar-2{
+  border-style: dashed;
+  border-color: purple;
+  margin: 0 auto;
+
+
+}
+.savedFiles{
+  padding-top: 10px;
+}
+
+.createFiles{
+  padding-top: 10px;
+}

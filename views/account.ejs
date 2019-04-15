@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Concurrent Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/mainpage.css">
+
+  </head>
+  <body>
+
+    <div class="wrapper d-flex">
+
+
+      <!-- Sidebar -->
+      <div class="sidebar-wrapper flex-row">
+        <div class="sidebar-column flex-column">
+          <div class="profile">
+            <div class="picture">
+              <img src="../css/pictures/mainlogo.png" alt="" class="sidebarLogo">
+            </div>
+
+            <div class="username">
+              <!-- Ejs -->
+              <h2><%= name%></h2>
+            </div>
+          </div>
+
+          <div class="Navigation flex-column">
+            <div class="nav-interface">
+              <div class="nav-interface-1">
+                <label class='labels'>Interface</label>
+              </div>
+            </div>
+
+            <div class="nav-items">
+              <ul class="sidebar-nav">
+                <li><a href="/pages/mainpage">Home</a></li>
+                <li><a href="/pages/account">Account</a></li>
+                <li><a href="/user/logout">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- Page content -->
+      <div class="content-wrapper d-flex flex-row ">
+        <div class="container-fluid">
+          <div class="col account-mainPage">
+            <div class="row-12 account-info">
+
+              <div class="col account-profile">
+
+                <div class="row-2 account-picture">
+                  <img src="../css/pictures/usericon.png" alt="">
+                </div>
+
+                <div class="row-2 username">
+
+                  <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="<%= name%>">
+                </div>
+                <div class="row-2 email">
+                  <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="<%= email%>">
+
+                </div>
+                <div class="row-2 changepass">
+                  <!-- Ejs -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  </body>
+</html>

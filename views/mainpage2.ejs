@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Concurrent Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/mainpage.css">
+
+</head>
+
+<body>
+
+
+
+
+  <div class="wrapper d-flex">
+
+
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper flex-row">
+      <div class="sidebar-column flex-column">
+        <div class="profile">
+          <div class="picture">
+            <img src="../css/pictures/mainlogo.png" alt="" class="sidebarLogo">
+          </div>
+
+          <div class="username">
+            <!-- Ejs -->
+            <h2><%= name%></h2>
+          </div>
+
+        </div>
+
+        <div class="Navigation flex-column">
+          <div class="nav-interface">
+            <div class="nav-interface-1">
+              <label class='labels'>Interface</label>
+            </div>
+          </div>
+          <div class="nav-items">
+            <ul class="sidebar-nav">
+              <li><a href="/pages/mainpage">Home</a></li>
+              <li><a href="/pages/account">Account</a></li>
+              <li><a href="/user/logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Page content -->
+    <div class="content-wrapper d-flex flex-row ">
+
+      <div class="container-fluid content">
+
+        <div class="col mainPage">
+
+          <!--  CREATE DOCUMENT INFORMATION-->
+          <div class="row-lg-3">
+            <div class="d-flex align-items-center p-2 my-2 text-white-50 rounded box-shadow bgcolor">
+              <img class="mr-3" src="../css/pictures/c.png" alt="" width="48" height="48">
+              <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100">Create New Document</h6>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row-lg-3 p-3 mt-3 mb-5 createNew bgs">
+            <div class="createCard-2" id="createCard">
+
+              <div class="card-2">
+                <img class="card-img-top" src="../css/pictures/d.png" alt="Card image cap" width="32" height="200">
+
+                <form method="GET" action="/pages/namedocument">
+                  <button type="submit" class="butn btn btn-primary"> Create </button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- SAVED DOCUMENTS -->
+          <div class="row-lg-3">
+            <div class="d-flex align-items-center p-2 my-2 text-white-50 rounded box-shadow bgcolor2">
+              <img class="mr-3" src="../css/pictures/c.png" alt="" width="48" height="48">
+              <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100"> Saved Documents</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-lg-3 bg-white p-3 mt-3 mb-5 createNew bgs">
+            <div class="createCard-2" id="createCard">
+
+              <div class="card-2">
+                <img class="card-img-top" src="../css/pictures/d.png" alt="Card image cap" width="32" height="200">
+
+                <form method="GET" action="/session/display">
+                  <button type="submit" class="butn btn btn-primary"> Open </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Menu toggle script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("menuDisplayed");
+    });
+  </script>
+
+</body>
+
+</html>

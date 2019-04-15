@@ -1,0 +1,165 @@
+html{
+  height: 100%;
+  width:100%;
+}
+
+body {
+  background:  #f2f2f2;
+  height: 100%;
+  width:100%;
+}
+/*  Sidebar css */
+.wrapper{
+  min-height: 100%;
+   height: 100%;
+}
+
+.sidebar-wrapper{
+  background: #4299DD;
+  width: 15rem;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.Navigation{
+  background: #61AEEB;
+  text-decoration: none;
+  color: #ddd;
+}
+
+.nav-interface-1{
+
+  width: 100%;
+  opacity: 0.6;
+  border-bottom: 2px solid white;
+  font-size: 19px;
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav a{
+  color:white;
+}
+.sidebar-nav li {
+
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebarLogo{
+  width: 150px;
+  height: 150px;
+}
+.labels{
+  margin-top: 10px;
+  padding-left:1em;
+  color:black;
+}
+
+.nav-items{
+  padding-top: 1em;
+}
+
+
+.profile{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.picture{
+  text-align: center;
+}
+.username{
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+
+
+/* Content */
+.content-wrapper{
+  width: 100%;
+  margin: 2em;
+  margin-bottom: 5em;
+
+}
+
+.content{
+
+    /* background: #ABC8EA;;
+    box-shadow: 5px 5px 5px  grey; */
+
+}
+
+
+/* Items */
+.mainPage{
+  padding-top: 2em;
+
+}
+.bgs{
+    background: #F4F6FF;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 5px;
+}
+
+.card-2{
+
+        text-align: center;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        width: 13em;
+        height: 15em;
+        box-shadow: 5px 5px 5px grey;
+        background:#a6a6a6;
+
+}
+.createCard-2{
+
+}
+
+/* Saveddocs */
+.card {
+
+        text-align: center;
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        width: 13em;
+        height: 15em;
+        box-shadow: 5px 5px 5px grey;
+        background:white;
+
+}
+.createCard{
+  margin-top: 2em;
+
+}
+
+
+.bgcolor{
+  background: #4299DD;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.bgcolor2{
+  background: #4299DD;
+  box-shadow: 5px 5px 5px grey;
+}
+
+
+/* ACCOUNT PAGE */
+.account-mainPage{
+
+}
+.account-info{
+  text-align: center;
+
+}
+
+.account-profile{
+    background: white;
+    text-align: center;
+}

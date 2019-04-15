@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background: #f2f2f2;
+
+    }
+
+    .wrapper {
+
+      background: #7db9e8;
+    }
+
+    #container {
+      width: 75%;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    #editor {
+      background-color: #FFFE;
+      color: black;
+      margin: 10px;
+      height: 1000px;
+    }
+
+    .tool {}
+
+    .ree {
+      background-color: #f2f2f2;
+      box-shadow: 5px 5px 5px #000;
+
+      margin-bottom: 70px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+
+    <div class="ree">
+      <h1 class="" id="demo"></h1>
+
+
+      <form id="myForm" action="/session/adduser" method="post">
+        <div class="form-group">
+          <input type="hidden" class="form-control" placeholder="Document title" name="name" id="name">
+          <input type="hidden" class="form-control" placeholder="Document title" name="current" id="current">
+        </div>
+
+        <input type="submit" id="myButton" value="Add User">
+      </form>
+      <p></p>
+
+    </div>
+
+
+    <div id="container" class="tool">
+      <div id="editor">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script>
+    var path = window.location.pathname;
+    path = path[0] == '/' ? path.substr(1) : path;
+    document.getElementById("demo").innerHTML =
+      "" + path;
+
+    document.getElementById("myButton").onclick = function() {
+      var person = prompt("Please enter the name of the user you want to add to the file:");
+
+      document.getElementById("name").value = person;
+      document.getElementById("current").value = path;
+
+      document.getElementById("myForm").submit();
+    };
+  </script>
+  <script src="dist/bundle.js"></script>
+
+</body>
+
+<html>

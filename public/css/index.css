@@ -1,0 +1,84 @@
+body,html{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#185499+0,7db9e8+100 */
+  background: #7db9e8; /* Old browsers */
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+
+
+header{
+  text:white;
+}
+
+.wrapper{
+  margin-top: -150px;
+}
+
+.row{
+  justify-content: center;
+}
+
+.form-container{
+  margin-top: 50%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.form-header{
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 30px;
+}
+
+.form-group{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-button-group{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cover-heading{
+  margin: 1em;
+}
+
+.button-group{
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.butn{
+  margin: 1.5em;
+}
+
+.modal-content{
+  background-color: #3b4652;
+  opacity: .90;
+  box-shadow:1px 1px 5px #566576;
+}
+
+.item1{
+margin-top: 10em;
+margin-left: auto;
+margin-right: auto;
+}
+.indexLogo{
+  width:200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+/* ERROR */
+
+.error{
+  color:red;
+}

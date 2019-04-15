@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Concurrent Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="../css/index.css">
+
+  </head>
+  <body>
+
+
+
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-3 col-sm-6">
+
+            <form class="col-12 form-container" method="POST" action="/session/create" >
+              <div class="form-header">
+                <h1>Document Title</h1>
+                <p>Please enter the title of the document</p>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Document title" name="title" id="title">
+              </div>
+              <div class="button-group">
+                <button type="submit" class="butn btn btn-success "> Submit </button>
+                <button id="myButton" type="button" class="butn btn btn-secondary"> Back to home </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            location.href = "/pages/mainpage";
+        };
+    </script>
+
+
+
+
+  </body>
+</html>

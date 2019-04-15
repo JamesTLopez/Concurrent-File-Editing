@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Concurrent Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/mainpage.css">
+
+</head>
+
+<body>
+
+
+  <div class="wrapper d-flex">
+
+
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper flex-row">
+      <div class="sidebar-column flex-column">
+        <div class="profile">
+          <div class="picture">
+            <img src="../css/pictures/mainlogo.png" alt="" class="sidebarLogo">
+          </div>
+
+          <div class="username">
+            <!-- Ejs -->
+            <h2><%= name %> </h2>
+          </div>
+
+        </div>
+
+        <div class="Navigation flex-column">
+
+          <div class="nav-interface">
+            <div class="nav-interface-1">
+              <label class='labels'>Interface</label>
+            </div>
+          </div>
+          <div class="nav-items">
+            <ul class="sidebar-nav">
+              <li><a href="/pages/mainpage">Home</a></li>
+              <li><a href="/pages/account">Account</a></li>
+              <li><a href="/user/logout">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Page content -->
+    <div class="content-wrapper d-flex flex-row ">
+
+      <div class="container-fluid content">
+
+        <div class="col mainPage">
+
+          <div class="row">
+
+
+            <% for(var names of titles) {%>
+
+              <div class="col-2 createCard" id="createCard">
+
+                <div class="card">
+                  <form method="POST" action="/session/opendoc">
+                  <div class="form-group">
+                      <input type="hidden" class="form-control" placeholder="Document title" name="title" id="title" value="<%= names.title %>">
+                  </div>
+                  <img class="card-img-top" src="../css/pictures/d.png" alt="Card image cap" width="22" height="128">
+                    <h2><%= names.title %></h2>
+                    <button type="submit" class="butn btn btn-primary"> Open </button>
+                  </form>
+                </div>
+              </div>
+
+
+
+              <% }%>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "/pages/mainpage";
+      };
+  </script>
+
+
+
+
+</body>
+
+</html>

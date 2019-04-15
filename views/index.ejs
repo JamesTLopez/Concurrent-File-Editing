@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Concurrent File Editing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+
+
+</head>
+
+
+
+<body >
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-3 col-sm-6">
+          <form class="col-12 form-container" method="POST" action="/user/login">
+            <div class="form-header">
+              <img src="../css/pictures/mainlogo.png" alt="" class="indexLogo">
+              <h2>Concurrent Design</h2>
+              <h3>Login</h3>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" name="password" id="password"  placeholder="Password">
+            </div>
+            <div class="form-button-group">
+              <button type="submit" class="butn btn btn-success "> Submit </button>
+              <button id="myButton" type="button" class="butn btn btn-secondary"> Register </button>
+                        <!--  Add clickable label instead of button for register-->
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "/pages/register";
+      };
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
